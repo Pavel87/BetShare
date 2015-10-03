@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listview_group_text">#D6D3E7</color>
+    <color name="listview_child_text">#100843</color>
+    <color name="listview_child_bg">#D6F6D6</color>
+    <color name="listview_comment_bg">#79A2FF</color>
+    <color name="listview_comment_border">#5A5675</color>
+    <color name="edittext_bg">#D7D7F3</color>
+    <color name="fragment_bg">#A4FFFF</color>
+    <color name="groupid_bg">#3C3C3C</color>
+    <color name="list_child_grey_text">#515151</color>
+	<color name="betchoice_text">#900000</color>
+	<color name="whitetext">#F2F2F2</color>
+	<color name="create_fr_bg">#666673</color>
+	<color name="new_ind">#DE1500</color>
+</resources>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/create_fr_bg" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/create_fr_bg"
+		android:gravity="center_horizontal"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:baselineAligned="false"
+			android:orientation="horizontal" >
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="left"
+				android:orientation="vertical" >
+
+				<ImageView
+					android:id="@+id/backButton"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="10dp"
+					android:src="@drawable/back" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="center_horizontal"
+				android:orientation="vertical" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="15dp"
+					android:gravity="bottom"
+					android:text="@string/settings"
+					android:textColor="@color/betchoice_text"
+					android:textSize="20sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="right"
+				android:orientation="vertical" >
+
+				<ImageView
+					android:id="@+id/submitUserData"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginTop="10dp"
+					android:src="@drawable/submit_user" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<ScrollView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="15dp"
+				android:gravity="left"
+				android:orientation="vertical" >
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:divider="@color/betchoice_text"
+						android:orientation="horizontal"
+						android:padding="5dp" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Group ID:"
+							android:textColor="@color/betchoice_text"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/setGIDLayout"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginBottom="5dp"
+						android:orientation="vertical"
+						android:padding="5dp"
+						android:visibility="visible" >
+
+						<EditText
+							android:id="@+id/updateGroupId"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:background="@color/edittext_bg"
+							android:ems="10"
+							android:hint="@string/at_least_10_characters"
+							android:lines="1"
+							android:textSize="15sp" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dialog_rule1"
+							android:textColor="@color/betchoice_text" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dialog_rule2"
+							android:textColor="@color/betchoice_text" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dialog_rule3"
+							android:textColor="@color/betchoice_text" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dialog_rule4"
+							android:textColor="@color/betchoice_text" />
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/dialog_rule5"
+							android:textColor="@color/betchoice_text" />
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:orientation="vertical"
+					android:padding="5dp" >
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/name_"
+							android:textColor="@color/betchoice_text"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/setNameLayout"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:orientation="vertical"
+						android:visibility="visible" >
+
+						<EditText
+							android:id="@+id/updateUserName"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@color/edittext_bg"
+							android:ems="10"
+							android:hint="@string/change_name"
+							android:inputType="textCapWords"
+							android:maxLength="25"
+							android:textSize="15sp" />
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="5dp"
+					android:orientation="vertical"
+					android:padding="5dp" >
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal" >
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/password_"
+							android:textColor="@color/betchoice_text"
+							android:textStyle="bold" />
+					</LinearLayout>
+
+					<LinearLayout
+						android:id="@+id/setPasswordLayout"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="5dp"
+						android:orientation="vertical"
+						android:visibility="visible" >
+
+						<EditText
+							android:id="@+id/updatePassword1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="5dp"
+							android:background="@color/edittext_bg"
+							android:ems="10"
+							android:inputType="textPassword"
+							android:textSize="15sp" />
+
+						<EditText
+							android:id="@+id/updatePassword2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@color/edittext_bg"
+							android:ems="10"
+							android:inputType="textPassword"
+							android:textSize="15sp" />
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+	<com.google.android.gms.ads.AdView
+		android:id="@+id/adUserSetting"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		ads:adSize="BANNER"
+		ads:adUnitId="@string/banner_ad_unit_id_login" >
+	</com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

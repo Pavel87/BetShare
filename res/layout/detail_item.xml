@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/listview_child_bg"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="30dp"
+		android:layout_marginTop="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:id="@+id/sportType"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Football"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/list_child_grey_text"
+			android:textStyle="bold|italic" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linearLayout1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="@string/bet_"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/list_child_grey_text"
+			android:textStyle="italic" />
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/choiceView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="1"
+				android:textColor="@color/betchoice_text"
+				android:textSize="20sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearLayout2"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:background="@android:color/darker_gray"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:id="@+id/graph1"
+				android:layout_width="1dp"
+				android:layout_height="15dp"
+				android:layout_margin="1dp"
+				android:background="@android:color/holo_green_light"
+				android:orientation="horizontal" >
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearLayout3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:gravity="center"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/trustPercent1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0%"
+				android:textColor="@color/betchoice_text"
+				android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/oddsText"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1.55"
+			android:textColor="@color/betchoice_text"
+			android:textSize="15sp" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="30dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:id="@+id/author"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Pavel Machala:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/list_child_grey_text"
+			android:textSize="12sp"
+			android:textStyle="italic" />
+
+		<LinearLayout
+			android:id="@+id/llcoment"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="-10dp"
+			android:layout_marginTop="15dp"
+			android:background="@drawable/commentbrd" >
+
+			<TextView
+				android:id="@+id/comment"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="0.5dp"
+				android:background="@drawable/commentbubble"
+				android:padding="5dp"
+				android:text="Hokejovou Spartu vede už čtvrtou sezónu, ani v té současné ji však jako jednoho ze spolufavoritů do extraligového finále nedotáhl. Trenér Josef Jandač končí s Holešovickými stejně jako loni v semifinále, na rozdíl od loňského ročníku však jeho tým nezíská ani bronzovou medaili...končí s Holešovický1"
+				android:textAlignment="center"
+				android:textColor="@color/listview_child_text"
+				android:textSize="10sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>
